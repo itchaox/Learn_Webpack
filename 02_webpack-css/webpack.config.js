@@ -7,15 +7,15 @@
  * @desc       :
  */
 
-const path = require('path');
+const path = require("path")
 
 module.exports = {
   // 入口
-  entry: './src/index.js',
+  entry: "./src/index.js",
   // 出口
   output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'build.js',
+    path: path.resolve(__dirname, "./dist"),
+    filename: "build.js"
   },
   // 模块
   module: {
@@ -29,9 +29,9 @@ module.exports = {
         // 写法二
         //FIXME: loader 执行顺序 从下往上，从左往右
         use: [
-          'style-loader',
-          'css-loader',
-          'postcss-loader',
+          "style-loader",
+          "css-loader",
+          "postcss-loader"
 
           // {
           //   loader: 'postcss-loader',
@@ -41,7 +41,7 @@ module.exports = {
           //     },
           //   },
           // },
-        ],
+        ]
         // css-loader，解析 css 文件
         // style-loader，将 style 插入页面
 
@@ -55,15 +55,15 @@ module.exports = {
 
       {
         test: /\.less$/,
-        use: ['style-loader', 'css-loader', 'less-loader'],
+        use: ["style-loader", "css-loader", "less-loader"]
         // less-loader，将 less 解析成普通 css
-      },
+      }
 
       // {
       //   test: /\.(less|css)$/,
       //   use: ['style-loader', 'css-loader', 'less-loader'],
       //   // less-loader，将 less 解析成普通 css
       // },
-    ],
-  },
-};
+    ]
+  }
+}

@@ -1,4 +1,7 @@
 .t {
-  color: #12312382;
-  user-select: none;
+  color           : #12312382;
+  user-select     : none;
+  background-image: url('../img/aa.png');
+  width           : 100%;
+  height          : 100vh;
 }
